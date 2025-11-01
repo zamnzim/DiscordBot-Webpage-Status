@@ -12,7 +12,7 @@ docker run -d \
   --restart unless-stopped \
   -e DISCORD_TOKEN=your_discord_bot_token_here \
   -it websites-data:/app/data \
-  ghcr.io/zamnzim/discordbot-docker-status:latest
+  ghcr.io/zamnzim/discordbot-webpage-status:latest
 ```
 # Docker Compose
 ```yaml
