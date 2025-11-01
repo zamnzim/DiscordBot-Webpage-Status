@@ -182,7 +182,7 @@ async def update_status():
         try:
             message = await channel.fetch_message(message_id)
             embed = discord.Embed(title=url, url=url, description=description)
-            embed.set_thumbnail(url=favicon or "https://via.placeholder.com/150")
+            embed.set_thumbnail(url=favicon or "https://static.thenounproject.com/png/778835-200.png")
             embed.add_field(name="Status", value="🟢 Online" if status else "🔴 Offline", inline=True)
             await message.edit(embed=embed)
             logger.info(f"Updated status for {url}")
