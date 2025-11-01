@@ -1,0 +1,11 @@
+services:
+  discord-bot:
+    image: ghcr.io/zamnzim/discordbot-webpage-status:latest
+    environment:
+      - DISCORD_TOKEN=your_discord_bot_token_here
+    volumes:
+      - websites-data:/app/data #Location for SQL Database
+    restart: unless-stopped
+
+volumes:
+  websites-data:
