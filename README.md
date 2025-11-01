@@ -11,7 +11,7 @@ docker run -d \
   --name discordbot-webpage-status \
   --restart unless-stopped \
   -e DISCORD_TOKEN=your_discord_bot_token_here \
-  -it websites-data:/app/data \
+  -v websites-data:/app/data \
   ghcr.io/zamnzim/discordbot-webpage-status:latest
 ```
 # Docker Compose
