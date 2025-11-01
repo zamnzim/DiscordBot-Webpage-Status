@@ -1,0 +1,15 @@
+ame: Publish Docker Image to GHCR
+
+on:
+  push
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and push the Image
+        run: |
+          docker login --username zamnzim --password ${{ secrets.GH_TOKEN}} ghcr.io
+          docker build . --tag ghcr.io/zamnzim/discordbot-webpage-status:latest
+          docker push ghcr.io/zamnzim/discordbot-webpage-status:latest
