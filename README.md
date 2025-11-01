@@ -21,6 +21,7 @@ When you add a website using `!webstatus`, the bot will scrape the website metad
 - If no favicon is available or valid, the bot will ask you to provide a direct `.png` image URL.
 
 > ⚠️ **Note:** The favicon URL must point directly to a `.png` image file.
+
 > ⚠️ **Note:** This tends to fail with google websites. Currently working on a fix. The script thinks the google favicon is valid but no image is availble.
 
 # Docker Run
