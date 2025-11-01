@@ -1,7 +1,7 @@
 # DiscordBot-Webpage-Status
-A Discord bot that monitors the online status of websites, displays their metadata, and updates their status periodically using embedded messages.
+A Discord bot that runs in a docker container and monitors the online status of websites, displays their metadata, and updates their status periodically using embedded messages.
 
-All website data is stored in a SQLite database, including the message ID and channel ID. The bot periodically scans the database, checks if each website is accessible, and updates the corresponding status message in Discord.
+All website data is stored in a SQLite database, including the message ID and channel ID of the embeded message. The bot periodically scans the database, checks if each website is accessible, and updates the corresponding status message in Discord.
 
 ![Example Running](https://github.com/user-attachments/assets/f1ffce23-eb3f-47f9-b313-0faf2f06a139)
 
